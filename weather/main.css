@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(90, 255, 90);
+    border-radius: 0px 16px 0px 16px;
+    border-bottom: 3px solid rgb(143, 255, 158);
+
+    color: #27ff20ec;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+header input:focus {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    color: rgb(9, 255, 0);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date {
+    color: rgb(120, 255, 115);
+    font-size: 16px;
+}
+
+.current .temp {
+    color: rgb(45, 255, 17);
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span {
+    font-weight: 500;
+}
+
+.current .weather {
+    color: rgb(78, 255, 108);
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low {
+    color: rgb(52, 255, 79);
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.customButton {
+    border: 5.9px groove #71FF00;
+    border-radius: 9.2px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #000000;
+    color: #47FF00;
+    font-weight: normal;
+    opacity: 1;
+    transition: 1s;
+}
+
+.customButton:hover {
+    cursor: pointer;
+    background-color: #6BF900;
+    opacity: 0.5;
+    transition: 1s;
+    color: #000000;
+}
